@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+main,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #534741;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ここから */
+header main {
+  background-color: #fafaf9;
+}
+.header_wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.header_wrap p {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+
+.header_logo {
+  padding: 20px 0 0 80px;
+}
+.mainvisual img {
+  max-width: 100%;
+}
+
+.header_text :nth-child(1) {
+  font-size: 57px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+.header_text :nth-child(2) {
+  font-size: 21px;
+  position: absolute;
+  top: 57%;
+  left: 23%;
+  line-height: 1.9;
+}
+
+.concept {
+  width: 100%;
+}
+.concept p {
+  text-align: center;
+  font-family: "Hiragino Mincho ProN";
+  font-size: 20px;
+  line-height: 2.1;
+  margin: 132px 0 54px 0;
+  letter-spacing: 0.1em;
+}
+.concept_btn {
+  text-align: center;
+  margin-bottom: 169px;
+}
+
+.service {
+  text-align: center;
+}
+.service_title p {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #e9e0d6;
+}
+.service_title h2 {
+  margin-top: -50px;
+}
+.service_wrap {
+  display: flex;
+  max-width: 1000px;
+  margin: 70px auto 0;
+}
+.service_wrap li {
+  width: 30%;
+  margin: 0 auto;
+}
+.service_wrap img {
+  padding-bottom: 26px;
+}
+h3 {
+  padding-bottom: 3px;
+}
+.service_title2 {
+  font-size: 13px;
+  padding-bottom: 26px;
+}
+.service_text {
+  text-align: justify;
+  line-height: 1.73;
+}
+.works {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works_title p {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #e9e0d6;
+  margin-top: 154px;
+}
+.works_title h2 {
+  margin-top: -50px;
+  padding-bottom: 112px;
+}
+.works_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  flex-wrap: wrap;
+}
+
+.works_box {
+  width: 30%;
+}
+.works_title1 {
+  font-size: 17px;
+  padding: 12px 0 3px 0;
+}
+.works_title2 {
+  font-size: 13px;
+  padding-bottom: 65px;
+}
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about_title p {
+  text-align: center;
+  font-family: "Hiragino Mincho ProN";
+  font-size: 169px;
+  color: #e9e0d6;
+  margin-top: 165px;
+}
+.about_title h2 {
+  text-align: center;
+  margin: -50px 0 143px 0;
+}
+.name {
+  display: flex;
+  padding: 20px 0 40px 450px;
+  z-index: 1;
+}
+.name :nth-child(1) {
+  font-family: "Toppan Bunkyu Gothic";
+  font-size: 24px;
+  border-right: 2px solid #534741;
+  padding: 0 30px;
+  align-items: center;
+}
+.name :nth-child(2) {
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  font-size: 12px;
+  padding: 0 30px;
+}
+.about_wrap {
+  display: flex;
+  justify-content: center;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+
+.about_wrap img {
+  width: 24%;
+  z-index: 1;
+}
+.profile {
+  padding-left: 100px;
+}
+
+.profile :nth-child(1) {
+  font-size: 18px;
+  line-height: 1.75;
+  padding-top: 40px;
+}
+
+.about_haikei {
+  justify-content: end;
+  margin: -380px 0 0 200px;
+}
+
+.about_btn {
+  margin: 0 0 110px 700px;
+}
