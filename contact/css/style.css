@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #534741;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ここから */
+
+header main {
+  background-color: #fafaf9;
+}
+.sns {
+  position: fixed;
+  right: 50px;
+  top: 100px;
+}
+.header_wrap {
+  display: flex;
+}
+.header_logo {
+  padding: 20px 120px;
+}
+.fv {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_img img {
+  width: 100%;
+}
+.contact_title {
+  margin-bottom: 80px;
+}
+.contact_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 165px;
+  color: #c7b299;
+  margin-top: -100px;
+}
+.contact_title h2 {
+  margin-top: -50px;
+  letter-spacing: 0.1rem;
+}
+
+.contact_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact_text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.contact_text p {
+  font-size: 17px;
+  line-height: 1.88;
+  padding: 50px 0;
+}
+
+.toppage_btn {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 55px;
+}
+footer {
+  background-color: #cfc9bf;
+  padding-top: 50px;
+}
+.footer_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #4d4d4d;
+  align-items: center;
+}
+.footer_nav ul li {
+  padding: 0 20px;
+  border-right: 1px solid #4d4d4d;
+}
+.footer_nav ul li:last-child {
+  border-right: none;
+}
+.footer_logo {
+  padding: 0 30px;
+}
+.copylight {
+  max-width: 1000px;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  font-size: 9px;
+  color: #4d4d4d;
+  text-align: end;
+  margin: 0 auto;
+  padding: 0 100px 35px 0;
+  justify-content: space-around;
+}
+
+/* コンタクトフォーム */
+
+.Form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+.Form-Item {
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding: 5px 0;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #998675;
+  color: #fff;
+  font-size: 14px;
+}
+
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.Form-Btn {
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 170px;
+  display: block;
+  letter-spacing: 0.1rem;
+  background: #998675;
+  color: #fff;
+  font-size: 18px;
+}

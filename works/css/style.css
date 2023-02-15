@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #534741;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+/* ここまでcssリセット */
+/* ここから始まり */
+
+header main {
+  background-color: #fafaf9;
+}
+.sns {
+  position: fixed;
+  right: 50px;
+  top: 100px;
+}
+.header_wrap {
+  display: flex;
+}
+.header_logo {
+  padding: 20px 120px;
+}
+.fv {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_img img {
+  width: 100%;
+}
+.works_title {
+  margin-bottom: 80px;
+}
+.works_title_en {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 165px;
+  color: #c7b299;
+  margin-top: -100px;
+}
+.works_title h2 {
+  margin-top: -50px;
+  letter-spacing: 0.1rem;
+}
+
+.works_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item_title {
+  font-size: 21px;
+  font-weight: bold;
+  border-left: 11px solid #c6ba60;
+  padding: 0 10px;
+  margin: 30px;
+}
+
+.works_contents {
+  display: flex;
+  margin: 0 30px;
+}
+.works_contents img {
+  width: 45%;
+  margin-right: 50px;
+}
+
+.textbox {
+  border: solid 2px #c6ba60;
+  border-radius: 8px;
+  width: 484px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.work_head {
+  font-size: 21px;
+  padding: 10px;
+}
+
+.data {
+  font-size: 21px;
+  padding: 10px;
+}
+
+.comment {
+  padding: 10px;
+}
+
+.comment p {
+  padding-top: 20px;
+  line-height: 1.62;
+  border-top: solid 2px #c6ba60;
+}
+
+/* トップページボタン以降 */
+.toppage_btn {
+  padding-bottom: 55px;
+  text-align: center;
+}
+footer {
+  background-color: #cfc9bf;
+  padding-top: 50px;
+}
+.footer_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #4d4d4d;
+  align-items: center;
+}
+.footer_nav ul li {
+  padding: 0 20px;
+  border-right: 1px solid #4d4d4d;
+}
+.footer_nav ul li:last-child {
+  border-right: none;
+}
+.footer_logo {
+  padding: 0 30px;
+}
+.copylight {
+  max-width: 1000px;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  font-size: 9px;
+  color: #4d4d4d;
+  text-align: end;
+  margin: 0 auto;
+  padding: 0 100px 35px 0;
+  justify-content: space-around;
+}
+
+/* タブの構成 */
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#tab {
+  margin: 0 auto;
+}
+
+.tabMenu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+  border-bottom: 30px solid #c6ba60;
+}
+.tabItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex-basis: 17%;
+  flex-shrink: 0;
+  background-color: #999999;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "Toppan Bunkyu Gothic";
+}
+.tabItem.tabItem-current {
+  background-color: #c6ba60;
+  color: #fff;
+}
+
+.tabContent {
+  position: relative;
+}
+.tabBlock {
+  opacity: 0;
+  transition: 0.5s;
+}
+.tabBlock.tabBlock-show {
+  position: static;
+  opacity: 1;
+}
