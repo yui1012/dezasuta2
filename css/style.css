@@ -1,64 +1,84 @@
-@charset "utf-8";
-
-/*利用するタグによってこちらの内容は増やす*/
-
-html,
-body,
-main,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  /*デフォルトの文字色、font-familyを予め当てておく*/
+/* スクロールダウン */
+.scroll {
   color: #534741;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-size: 13px;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 600px;
+  right: 50px;
+}
+.scroll::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: -120px;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100px;
+  background-color: #534741;
 }
 
-a {
-  /*下線を消す*/
-  text-decoration: none;
-  /*色を消す*/
-  color: inherit;
+.scroll::after {
+  animation: scroll 3s cubic-bezier(1, 0, 0, 1) infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
 }
 
-ul {
-  /*左の「・」を消す*/
-  list-style: none;
+/* 背景装飾 */
+
+.haikei01 img {
+  position: absolute;
+  top: 1100px;
+  left: -40px;
 }
 
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
+.haikei02 img {
+  position: absolute;
+  top: 80px;
+  right: -43px;
 }
 
-/* ここから */
-header main {
-  background-color: #fafaf9;
+.haikei03 img {
+  position: absolute;
+  top: 1720px;
+  right: 0;
 }
-.sns {
-  position: fixed;
-  right: 25px;
-  top: 100px;
-  z-index: 1;
+
+.haikei04 img {
+  position: absolute;
+  top: 2900px;
+  left: -20px;
 }
-.header_wrap {
-  display: flex;
-  max-width: 1400px;
-  justify-content: space-between;
+
+.haikei05 img {
+  position: absolute;
+  top: 2721px;
+  right: 77px;
 }
-.header_logo {
-  padding: 20px 0 0 120px;
+
+/* メインビジュアル　スタート */
+.main {
+  overflow: hidden;
+  position: relative;
 }
+
 .main_visual {
   text-align: center;
   position: relative;
@@ -66,7 +86,6 @@ header main {
 .main_visual img {
   max-width: 88%;
 }
-
 .main_text p {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
@@ -88,6 +107,8 @@ header main {
 }
 
 .concept {
+  position: relative;
+  overflow: hidden;
   width: 100%;
 }
 .concept p {
@@ -103,8 +124,14 @@ header main {
   margin-bottom: 169px;
 }
 
+.concept_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
 .service {
+  overflow: hidden;
   text-align: center;
+  position: relative;
 }
 .service_title_en {
   font-family: "Hiragino Mincho ProN";
@@ -126,6 +153,7 @@ header main {
 .service_wrap img {
   padding-bottom: 26px;
 }
+
 h3 {
   padding-bottom: 3px;
 }
@@ -162,6 +190,7 @@ h3 {
 
 .works_box {
   width: 30%;
+  z-index: 1;
 }
 .works_title1 {
   font-size: 17px;
@@ -171,6 +200,11 @@ h3 {
   font-size: 13px;
   padding-bottom: 65px;
 }
+
+.works_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
 .about {
   max-width: 1000px;
   margin: 0 auto;
@@ -186,49 +220,50 @@ h3 {
   text-align: center;
   margin: -50px 0 143px 0;
 }
-.name {
+.about_wrap {
   display: flex;
-  padding: 20px 0 40px 450px;
+  justify-content: center;
+  padding: 0px 50px 0 0;
+}
+.name_content {
+  display: flex;
   letter-spacing: 0.1rem;
 }
-.name :nth-child(1) {
+.name {
   font-family: "Toppan Bunkyu Gothic";
   font-size: 24px;
   border-right: 2px solid #534741;
-  padding: 0 30px;
+  padding: 0 30px 0 0;
   align-items: center;
 }
-.name :nth-child(2) {
+.name_designer {
   font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
   font-size: 12px;
   padding: 0 30px;
 }
-.about_wrap {
-  display: flex;
-  justify-content: center;
-  margin-left: -100px;
-  margin-top: -50px;
-}
 
 .about_wrap img {
-  width: 24%;
+  width: 25%;
+  height: 25%;
   z-index: 1;
-}
-.profile {
-  padding-left: 100px;
+  padding: 5% 4% 0 0;
 }
 
-.profile :nth-child(1) {
+.about_inner {
+  padding-left: 20px;
+}
+
+.profile1 {
   font-size: 18px;
   line-height: 1.75;
-  padding-top: 40px;
+  padding-top: 25px;
 }
-.profile :nth-child(2) {
+.favorite {
   font-size: 22px;
   letter-spacing: 0.1rem;
   padding-top: 26px;
 }
-.profile :nth-child(3) {
+.profile2 {
   font-size: 18px;
   letter-spacing: 0.1rem;
   padding-top: 12px;
@@ -237,18 +272,26 @@ h3 {
 
 .about_haikei {
   justify-content: end;
-  margin: -380px 0 0 200px;
+  margin: -345px 0 0 180px;
 }
 
 .about_btn {
-  margin: 0 0 110px 700px;
+  max-width: 1000px;
+  text-align: end;
+  margin: -10px 220px 100px 0;
+}
+
+.about_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 
 .contact {
   text-align: center;
 }
 .contact_wrap {
-  margin-top: -400px;
+  padding: 50px 0;
+  background-image: url(../images/contact_haikei@2x-80.jpg);
+  background-size: cover;
 }
 .contact_title_en {
   font-family: "Hiragino Mincho ProN";
@@ -263,8 +306,9 @@ h3 {
   font-size: 18px;
   line-height: 1.83;
 }
-.contact_btn {
-  margin-bottom: 75px;
+
+.contact_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 footer {
   background-color: #cfc9bf;
@@ -302,81 +346,4 @@ footer {
   margin: 0 auto;
   padding: 0 100px 35px 0;
   justify-content: space-around;
-}
-
-/* バンバーガー */
-
-.pc_btn {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  display: block;
-  height: 23px;
-  cursor: pointer;
-  z-index: 2;
-}
-.pc_btn span {
-  position: relative;
-  top: 10px;
-  display: block;
-  width: 42px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: #998675;
-  transition: 0.3s;
-}
-.pc_btn span::before,
-.pc_btn span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 42px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: #998675;
-  transition: 0.3s;
-}
-.pc_btn span::before {
-  bottom: 10px;
-}
-.pc_btn span::after {
-  top: 10px;
-}
-
-/* バンバーガー閉じる */
-.pc_btn.open span {
-  background: transparent;
-}
-.pc_btn.open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-.pc_btn.open span::after {
-  top: 0;
-  transform: rotate(135deg);
-}
-
-/* ハンバーガーメニュー */
-.pc_nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(102, 102, 102, 0.8);
-  z-index: 1;
-}
-
-.pc_nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.pc_nav ul li {
-  padding: 20px;
-  color: #fff;
-  font-size: 30px;
-  font-family: "Hiragino Mincho ProN";
 }

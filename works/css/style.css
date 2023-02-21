@@ -1,63 +1,5 @@
-@charset "utf-8";
-
-/*利用するタグによってこちらの内容は増やす*/
-
-html,
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #534741;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-}
-
-a {
-  /*下線を消す*/
-  text-decoration: none;
-  /*色を消す*/
-  color: inherit;
-}
-
-ul {
-  /*左の「・」を消す*/
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
-}
-/* ここまでcssリセット */
-/* ここから始まり */
-
-header main {
-  background-color: #fafaf9;
-}
-.sns {
-  position: fixed;
-  right: 50px;
-  top: 100px;
-}
-.header_wrap {
-  display: flex;
-}
-.header_logo {
-  padding: 20px 120px;
-}
 .fv {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -73,8 +15,9 @@ header main {
   color: #c7b299;
   margin-top: -100px;
 }
-.works_title h2 {
-  margin-top: -50px;
+.works_title h1 {
+  font-size: 24px;
+  margin-top: -59px;
   letter-spacing: 0.1rem;
 }
 
@@ -88,7 +31,7 @@ header main {
   font-weight: bold;
   border-left: 11px solid #c6ba60;
   padding: 0 10px;
-  margin: 30px;
+  margin: 75px 0 40px 30px;
 }
 
 .works_contents {
@@ -130,8 +73,13 @@ header main {
 
 /* トップページボタン以降 */
 .toppage_btn {
+  margin-top: 135px;
   padding-bottom: 55px;
   text-align: center;
+}
+
+.toppage_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
 footer {
   background-color: #cfc9bf;
@@ -183,14 +131,14 @@ li {
   margin: 0 auto;
 }
 
-.tabMenu {
+.tab_menu {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   list-style: none;
   border-bottom: 30px solid #c6ba60;
 }
-.tabItem {
+.tabitem {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,19 +152,29 @@ li {
   margin: 0 10px;
   font-family: "Toppan Bunkyu Gothic";
 }
-.tabItem.tabItem-current {
+.tabitem.tabitem_current {
   background-color: #c6ba60;
   color: #fff;
 }
 
-.tabContent {
+.tab_content {
   position: relative;
 }
-.tabBlock {
-  opacity: 0;
-  transition: 0.5s;
+.tabblock {
+  display: none;
 }
-.tabBlock.tabBlock-show {
+.tabblock.tabblock_show {
+  display: block;
   position: static;
-  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

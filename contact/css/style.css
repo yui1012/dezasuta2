@@ -1,63 +1,5 @@
-@charset "utf-8";
-
-/*利用するタグによってこちらの内容は増やす*/
-
-html,
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #534741;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-}
-
-a {
-  /*下線を消す*/
-  text-decoration: none;
-  /*色を消す*/
-  color: inherit;
-}
-
-ul {
-  /*左の「・」を消す*/
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
-}
-
-/* ここから */
-
-header main {
-  background-color: #fafaf9;
-}
-.sns {
-  position: fixed;
-  right: 50px;
-  top: 100px;
-}
-.header_wrap {
-  display: flex;
-}
-.header_logo {
-  padding: 20px 120px;
-}
 .fv {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -73,8 +15,9 @@ header main {
   color: #c7b299;
   margin-top: -100px;
 }
-.contact_title h2 {
-  margin-top: -50px;
+.contact_title h1 {
+  font-size: 24px;
+  margin-top: -59px;
   letter-spacing: 0.1rem;
 }
 
@@ -93,11 +36,17 @@ header main {
   padding: 50px 0;
 }
 
+/* ボタン */
 .toppage_btn {
   text-align: center;
   margin-top: 100px;
   padding-bottom: 55px;
 }
+
+.toppage_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
 footer {
   background-color: #cfc9bf;
   padding-top: 50px;
@@ -138,29 +87,29 @@ footer {
 
 /* コンタクトフォーム */
 
-.Form {
+.form {
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;
 }
-.Form-Item {
+.form_item {
   padding-bottom: 40px;
   width: 100%;
 }
 
-.Form-Item-Label {
+.form_item_label {
   width: 100%;
   max-width: 248px;
   letter-spacing: 0.05em;
   font-weight: bold;
   padding-bottom: 20px;
 }
-.Form-Item-Label.isMsg {
+.form_item_label.ismsg {
   margin-top: 8px;
   margin-bottom: auto;
 }
 
-.Form-Item-Label-Required {
+.form_item_label_required {
   border-radius: 6px;
   margin-right: 8px;
   padding: 5px 0;
@@ -172,7 +121,7 @@ footer {
   font-size: 14px;
 }
 
-.Form-Item-Input {
+.form_item_input {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding-left: 1em;
@@ -184,7 +133,7 @@ footer {
   font-size: 18px;
 }
 
-.Form-Item-Textarea {
+.form_item_textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding-left: 1em;
@@ -196,7 +145,7 @@ footer {
   font-size: 18px;
 }
 
-.Form-Btn {
+.form_btn {
   border-radius: 8px;
   margin: 0 auto;
   padding: 5px 0;
@@ -206,4 +155,5 @@ footer {
   background: #998675;
   color: #fff;
   font-size: 18px;
+  border: none;
 }

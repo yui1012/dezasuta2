@@ -1,67 +1,5 @@
-@charset "utf-8";
-
-/*利用するタグによってこちらの内容は増やす*/
-
-html,
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #534741;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-}
-
-a {
-  /*下線を消す*/
-  text-decoration: none;
-  /*色を消す*/
-  color: inherit;
-}
-
-ul {
-  /*左の「・」を消す*/
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-  border: none;
-}
-
-/* ここから始まり */
-
-header main {
-  background-color: #fafaf9;
-}
-
-.sns {
-  position: fixed;
-  right: 50px;
-  top: 100px;
-}
-
-.header_wrap {
-  display: flex;
-}
-
-.header_logo {
-  padding: 20px 120px;
-}
-
 .fv {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -81,28 +19,42 @@ header main {
   margin-top: -100px;
 }
 
-.about_title h2 {
-  margin-top: -50px;
+.about_title h1 {
+  margin-top: -59px;
   letter-spacing: 0.1rem;
+  font-size: 24px;
 }
 
 /* 顔写真コンテンツ */
-.about_wrap {
-  max-width: 1500px;
-  margin: 0 auto;
+.about_wrap1 {
+  display: flex;
+  max-width: 1200px;
+  margin: 100px auto;
 }
-
+.name_content {
+  position: relative;
+  width: 493px;
+}
 .haikei1 {
-  padding: 150px 0 0 200px;
+  position: absolute;
+  top: 38px;
+  left: 8px;
+  width: 460px;
 }
 
 .about_name {
-  text-align: left;
-  margin: -450px 0 0 390px;
+  width: 242px;
+  position: absolute;
+  top: 10px;
+  right: 62px;
+}
+
+.about_name img {
+  width: 100%;
 }
 
 .name {
-  width: 19%;
+  width: 85%;
   font-family: "Toppan Bunkyu Gothic";
   font-size: 26px;
   padding: 10px 10px;
@@ -111,7 +63,7 @@ header main {
 }
 
 .designer {
-  padding: 5px 5px;
+  padding: 10px;
 }
 
 .designer p {
@@ -123,35 +75,21 @@ header main {
 }
 
 /* コンセプトのコンテンツ */
+
+.concept_content {
+  position: relative;
+  width: 707px;
+}
+
 .haikei2 {
-  text-align: end;
-  padding-right: 120px;
+  width: 721px;
 }
 
-.text_title {
-  font-size: 17px;
-  text-align: end;
-  margin: -380px 100px 0 0;
-  padding: 0 360px 20px 0;
-}
-
-.text_title span {
-  font-family: "Hiragino Mincho ProN";
-  font-size: 25px;
-}
-
-.wrap {
+.concept_inner {
   display: flex;
-  justify-content: end;
-  margin-right: 250px;
-}
-
-.concept_en {
-  writing-mode: vertical-rl;
-  font-size: 27px;
-  color: #afa497;
-  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
-  padding: 60px 50px 0 0;
+  position: absolute;
+  top: 175px;
+  left: 57px;
 }
 
 .concept_text p {
@@ -159,13 +97,37 @@ header main {
   line-height: 2;
 }
 
+.concept_text span {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 25px;
+}
+
+.concept_en {
+  writing-mode: vertical-rl;
+  font-size: 27px;
+  color: #afa497;
+  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
+  padding: 130px 71px 0 0;
+}
+
 /* Likeのコンテンツ */
+
+.about_wrap2 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .haikei3 {
-  padding: 180px 0 0 150px;
+  width: 836px;
 }
-.wrap2 {
-  margin: -460px 0 0 250px;
+
+.like_inner {
+  position: absolute;
+  top: 45px;
+  left: 135px;
 }
+
 .like_en {
   writing-mode: vertical-rl;
   font-size: 27px;
@@ -180,15 +142,26 @@ header main {
 
 /* historyのコンテンツ */
 
+.about_wrap3 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .haikei4 {
-  text-align: end;
-  padding: 180px 120px 0 0;
+  width: 839px;
+  position: absolute;
+  top: 0;
+  right: 40px;
 }
-.wrap3 {
+
+.history_inner {
   display: flex;
-  justify-content: end;
-  margin: -360px 200px 0 0px;
+  position: absolute;
+  top: 154px;
+  right: 182px;
 }
+
 .history_en {
   writing-mode: vertical-rl;
   font-size: 27px;
@@ -201,11 +174,18 @@ header main {
   line-height: 2;
 }
 
+/* ボタン */
+
 .toppage_btn {
   text-align: center;
-  padding: 220px 0 60px 0;
+  margin: 606px 0 55px 0;
 }
-/* ここからfooter */
+
+.toppage_btn img {
+  box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
+}
+
+/* footer */
 footer {
   background-color: #cfc9bf;
   padding-top: 50px;
@@ -216,6 +196,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 .footer_nav ul {
   display: flex;
   justify-content: space-between;

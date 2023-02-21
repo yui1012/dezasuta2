@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>works｜y.design</title>
     <meta name="description" content="制作実績">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
@@ -14,14 +15,26 @@
 <body>
     <header>
         <div class="header_wrap">
-            <div class="header_logo">
-                <img src="imeges/logo1.png" alt="横長のy.design">
+            <div class="header_logo"><a href="../index.html">
+                    <img src="images/logo1.png" alt="横長のy.design"></a>
             </div>
-
+            <div class="hamburger">
+                <nav class="pc_nav" style="display: none;">
+                    <ul>
+                        <li><a href="../index.html" class="nav_hover">home</a></li>
+                        <li><a href="../index.html#service" class="nav_hover">service</a></li>
+                        <li><a href="index.html" class="nav_hover">works</a></li>
+                        <li><a href="../about/index.html" class="nav_hover">about</a></li>
+                        <li><a href="../contact/index.html" class="nav_hover">contact</a></li>
+                        <li><a href="https://www.instagram.com/yui.n_12/"><img src="images/insta2.png" alt=""></a></li>
+                    </ul>
+                </nav>
+                <div class="pc_btn"><span></span></div>
+            </div>
         </div>
         <div class="sns">
-            <a href="">
-                <img src="imeges/instagramlogo.png" alt="Instagramアイコン">
+            <a href="https://www.instagram.com/yui.n_12/">
+                <img src="images/instagramlogo.png" alt="Instagramアイコン">
             </a>
         </div>
 
@@ -30,27 +43,27 @@
     <main>
         <div class="fv">
             <div class="main_img">
-                <img src="imeges/main@2x-80.jpg" alt="石の背景">
+                <img src="images/main@2x-80.jpg" alt="石の背景">
             </div>
             <div class="works_title">
                 <div class="works_title_en">works</div>
-                <h2>制作実績</h2>
+                <h1>制作実績</h1>
             </div>
         </div>
         <!-- タブ -->
         <div id="tab">
-            <ul class="tabMenu">
-                <li class="tabItem tabItem-current">WEB・LPデザイン</li>
-                <li class="tabItem">バナーデザイン</li>
-                <li class="tabItem">Graphicデザイン</li>
+            <ul class="tab_menu">
+                <li class="tabitem tabitem_current">WEB・LPデザイン</li>
+                <li class="tabitem">バナーデザイン</li>
+                <li class="tabitem">Graphicデザイン</li>
             </ul>
             <div class="works_wrap">
-                <div class="tabContent">
-                    <div class="tabBlock tabBlock-show">
-                        <div class="tabBlock__inner">
+                <div class="tab_content">
+                    <div class="tabblock tabblock_show">
+                        <div class="tabblock__inner1">
                             <div class="item_title">カフェサイト</div>
                             <div class="works_contents">
-                                <img src="imeges/cafe_mockup@2x-80.jpg" alt="カフェサイトのモック画像">
+                                <img src="images/cafe_mockup@2x-80.jpg" alt="カフェサイトのモック画像">
                                 <div class="textbox">
                                     <table style="border: none;">
                                         <tr style="border: none;">
@@ -78,25 +91,208 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="tabBlock">
-                        <div class="tabBlock__inner">
-                            <h3 class="tabBlock__title">コンテンツ02</h3>
-                            <p class="tabBlock__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <div class="tabblock__inner1">
+                            <div class="item_title">美容室サイト</div>
+                            <div class="works_contents">
+                                <img src="images/saron_mockup@2x-80.jpg" alt="美容室サイトのモック画像">
+                                <div class="textbox">
+                                    <table style="border: none;">
+                                        <tr style="border: none;">
+                                            <td class="work_head">カテゴリ：</td>
+                                            <td class="data">コーポレートサイト</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">担当範囲：</td>
+                                            <td class="data">デザイン&nbsp;/&nbsp;ライティング</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">制作期間：</td>
+                                            <td class="data">1週間</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment" colspan="2">
+                                                <p>デターゲット層に合わせた柔らかいピンクを基調<br>
+                                                    とした色合い・素材選定にこだわりました。予<br>
+                                                    約ボタンはアクセントになるピンク色を使用し、<br>
+                                                    分かりやすい導線を意識しました。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="tabBlock">
-                        <div class="tabBlock__inner">
-                            <h3 class="tabBlock__title">コンテンツ03</h3>
-                            <p class="tabBlock__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+                        <div class="tabblock__inner1">
+                            <div class="item_title">ワーキングスペースサイト</div>
+                            <div class="works_contents">
+                                <img src="images/workera_mock@2x-80.jpg" alt="workersサイトのモック画像">
+                                <div class="textbox">
+                                    <table style="border: none;">
+                                        <tr style="border: none;">
+                                            <td class="work_head">カテゴリ：</td>
+                                            <td class="data">コーポレートサイト</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">担当範囲：</td>
+                                            <td class="data">デザイン(トレース)</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">制作期間：</td>
+                                            <td class="data">1週間</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment" colspan="2">
+                                                <p>スマホで見た際にも綺麗に整うよう、レスポン<br>
+                                                    シブ対応にこだわっております。文字サイズや<br>
+                                                    ボタンの配色で予約までの導線が分かりやすい<br>
+                                                    サイトです。
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
                         </div>
+
+
+                    </div>
+                    <div class="tabblock">
+                        <div class="tabblock__inner2">
+                            <div class="item_title">スマホプラン広告バナー</div>
+                            <div class="works_contents">
+                                <img src="images/gakuwari_mockup@2x-80.jpg" alt="スマホプランのモック画像">
+                                <div class="textbox">
+                                    <table style="border: none;">
+                                        <tr style="border: none;">
+                                            <td class="work_head">カテゴリ：</td>
+                                            <td class="data">バナー</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">担当範囲：</td>
+                                            <td class="data">デザイン（トレース）</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">制作期間：</td>
+                                            <td class="data">1週間</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment" colspan="2">
+                                                <p>グラデーション背景は、和紙の質感を透過。<br>
+                                                    日本の国花“桜”をアクセントに取り入れ、<br>
+                                                    日本の春をイメージして作成しました。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tabblock__inner2">
+                            <div class="item_title">旅行会社広告バナー</div>
+                            <div class="works_contents">
+                                <img src="images/trrrip_mockup@2x-80.jpg" alt="旅行会社広告のモック画像">
+                                <div class="textbox">
+                                    <table style="border: none;">
+                                        <tr style="border: none;">
+                                            <td class="work_head">カテゴリ：</td>
+                                            <td class="data">バナー</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">担当範囲：</td>
+                                            <td class="data">デザイン（トレース）</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">制作期間：</td>
+                                            <td class="data">1週間</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment" colspan="2">
+                                                <p>タブレット内の画像は2枚の画像を<br>
+                                                    Photoshopで合成して作成。NEWアプリの<br>
+                                                    部分は太陽のように放射線状に線を散りばめて強調しました。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tabblock__inner2">
+                            <div class="item_title">ハンバーガーショップ広告バナー</div>
+                            <div class="works_contents">
+                                <img src="images/cafe_mockup@2x-80.jpg" alt="ハンバーガー広告のモック画像">
+                                <div class="textbox">
+                                    <table style="border: none;">
+                                        <tr style="border: none;">
+                                            <td class="work_head">カテゴリ：</td>
+                                            <td class="data">バナー</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">担当範囲：</td>
+                                            <td class="data">デザイン</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">制作期間：</td>
+                                            <td class="data">1週間</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment" colspan="2">
+                                                <p>背景の金箔や文字の色合いで高級感を演出。<br>
+                                                    余白も多めに取り、価値ある雰囲気が出るよ<br>
+                                                    うにと意識して作成しました。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tabblock">
+                        <div class="tabblock__inner3">
+                            <div class="item_title">WEBページロゴ</div>
+                            <div class="works_contents">
+                                <img src="images/y.disign_logomock@2x-80.jpg" alt="y.designロゴのモック画像">
+                                <div class="textbox">
+                                    <table style="border: none;">
+                                        <tr style="border: none;">
+                                            <td class="work_head">カテゴリ：</td>
+                                            <td class="data">ロゴ</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">担当範囲：</td>
+                                            <td class="data">デザイン</td>
+                                        </tr>
+                                        <tr style="border: none;">
+                                            <td class="work_head">制作期間：</td>
+                                            <td class="data">2週間</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="comment" colspan="2">
+                                                <p>コンセプト「想いを磨く」、モチーフは天然石。<br>
+                                                    重なるごとに小さくなる石は、磨かれるたび<br>
+                                                    洗練されていく過程を表現しました。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="toppage_btn">
-            <a href="">
-                <img src="imeges/toppage_btn.png" alt="topページボタン">
+            <a href="../index.html">
+                <img src="images/toppage_btn.png" alt="topページボタン">
             </a>
         </div>
 
@@ -111,24 +307,24 @@
             <nav class="footer_nav">
                 <ul>
                     <li>
-                        <a href="">home</a>
+                        <a href="../index.html">home</a>
                     </li>
                     <li>
-                        <a href="">service</a>
+                        <a href="../index.html#service">service</a>
                     </li>
                     <li>
-                        <a href="">works</a>
+                        <a href="index.html">works</a>
                     </li>
                     <li>
-                        <a href="">about</a>
+                        <a href="../about/index.html">about</a>
                     </li>
                     <li>
-                        <a href="">contact</a>
+                        <a href="../contact/index.html">contact</a>
                     </li>
                 </ul>
             </nav>
-            <div class="footer_logo">
-                <img src="imeges/logo2.png" alt="縦型ロゴ">
+            <div class="footer_logo"><a href="../index.html">
+                    <img src="images/logo2.png" alt="縦型ロゴ"></a>
             </div>
 
         </div>
@@ -136,20 +332,28 @@
     </footer>
 
     <script>
-        const tabLen = $('.tabItem').length;
+        const tabLen = $('.tabitem').length;
         for (i = 0; i < tabLen; i++) {
             tabChange(i);
         }
 
         function tabChange(index) {
-            $('.tabItem:nth-child(' + (index + 1) + ')').on('click', function (e) {
+            $('.tabitem:nth-child(' + (index + 1) + ')').on('click', function (e) {
                 e.preventDefault();
-                $('.tabItem.tabItem-current').removeClass('tabItem-current');
-                $(this).addClass('tabItem-current');
-                $('.tabBlock.tabBlock-show').removeClass('tabBlock-show');
-                $('.tabBlock:nth-child(' + (index + 1) + ')').addClass('tabBlock-show');
+                $('.tabitem.tabitem_current').removeClass('tabitem_current');
+                $(this).addClass('tabitem_current');
+                $('.tabblock.tabblock_show').removeClass('tabblock_show');
+                $('.tabblock:nth-child(' + (index + 1) + ')').addClass('tabblock_show');
             });
         }
+
+        $(function () {
+            $('.pc_btn').on('click', function () {
+                $('.pc_btn').toggleClass('open');
+                $('.pc_nav').fadeToggle();
+            });
+        });
+
     </script>
 
 </body>
