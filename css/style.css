@@ -4,7 +4,7 @@
   font-size: 13px;
   writing-mode: vertical-rl;
   position: absolute;
-  top: 600px;
+  bottom: 117px;
   right: 50px;
 }
 .scroll::after {
@@ -51,7 +51,7 @@
 
 .haikei02 img {
   position: absolute;
-  top: 80px;
+  top: 1000px;
   right: -43px;
 }
 
@@ -107,8 +107,6 @@
 }
 
 .concept {
-  position: relative;
-  overflow: hidden;
   width: 100%;
 }
 .concept p {
@@ -206,6 +204,7 @@ h3 {
 }
 
 .about {
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -223,7 +222,7 @@ h3 {
 .about_wrap {
   display: flex;
   justify-content: center;
-  padding: 0px 50px 0 0;
+  padding: 40px 50px 0 0;
 }
 .name_content {
   display: flex;
@@ -271,14 +270,15 @@ h3 {
 }
 
 .about_haikei {
-  justify-content: end;
-  margin: -345px 0 0 180px;
+  position: absolute;
+  top: 265px;
+  left: 190px;
 }
 
 .about_btn {
   max-width: 1000px;
   text-align: end;
-  margin: -10px 220px 100px 0;
+  margin: 60px 220px 100px 0;
 }
 
 .about_btn img {
@@ -310,40 +310,214 @@ h3 {
 .contact_btn img {
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
-footer {
-  background-color: #cfc9bf;
-  padding-top: 50px;
+
+/* SP版 始まり */
+.sp_only {
+  display: none;
 }
-.footer_wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.footer_nav ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-  color: #4d4d4d;
-  align-items: center;
-}
-.footer_nav ul li {
-  padding: 0 20px;
-  border-right: 1px solid #4d4d4d;
-}
-.footer_nav ul li:last-child {
-  border-right: none;
-}
-.footer_logo {
-  padding: 0 30px;
-}
-.copylight {
-  max-width: 1000px;
-  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
-  font-size: 9px;
-  color: #4d4d4d;
-  text-align: end;
-  margin: 0 auto;
-  padding: 0 100px 35px 0;
-  justify-content: space-around;
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+    margin: 0 auto;
+  }
+  .pc_only {
+    display: none;
+  }
+
+  .scroll {
+    top: 472px;
+    right: 30px;
+    z-index: 1;
+  }
+
+  .main_text :nth-child(1) {
+    font-size: 24px;
+  }
+  .main_text :nth-child(2) {
+    font-size: 15px;
+    line-height: 1.44;
+    margin: 15px 0px 0 15px;
+  }
+
+  .concept p {
+    font-size: 15px;
+    line-height: 2;
+    margin: 50px 0 30px 0;
+  }
+
+  .service_title h2 {
+    margin: -30px 0 30px 0;
+    font-size: 15px;
+  }
+
+  .service_title_en {
+    font-size: 75px;
+  }
+
+  .service_wrap {
+    display: block;
+    margin: 0 10px;
+  }
+
+  .service_wrap li {
+    padding-top: 70px;
+    width: 90%;
+  }
+
+  .service_wrap img {
+    width: 40%;
+  }
+
+  .service_wrap h3 {
+    font-size: 15px;
+  }
+  .service_title2 {
+    font-size: 12px;
+  }
+
+  .service_text {
+    font-size: 15px;
+  }
+
+  .works_title h2 {
+    margin: -30px 0 30px 0;
+    font-size: 15px;
+    padding-bottom: 70px;
+  }
+
+  .works_title_en {
+    font-size: 75px;
+  }
+
+  .works_wrap {
+    display: block;
+  }
+
+  .works_box {
+    width: 100%;
+  }
+
+  .works_title1 {
+    font-family: 15px;
+  }
+
+  .works_title2 {
+    font-size: 12px;
+    color: #c7b299;
+  }
+
+  .about_title h2 {
+    margin: -30px 0 80px 0;
+    font-size: 15px;
+  }
+
+  .about_title_en {
+    font-size: 75px;
+  }
+  .about_haikei {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+  }
+  .about_inner {
+    padding: 0;
+  }
+
+  .about_wrap {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .about_wrap img {
+    width: 35%;
+    padding: 0;
+  }
+  .name_content {
+    display: block;
+    width: 37%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 18px;
+    border-bottom: 2px solid #534741;
+    border-right: none;
+    padding: 20px 0 10px 0;
+    text-align: start;
+  }
+  .name_designer {
+    padding: 7px 0 0 0;
+    text-align: start;
+  }
+
+  .profile {
+    text-align: start;
+    padding: 7px 53px 0 66px;
+  }
+  .profile1 {
+    font-size: 15px;
+    line-height: 1.86;
+    padding-top: 25px;
+  }
+  .favorite {
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    padding-top: 26px;
+  }
+  .profile2 {
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    padding-top: 12px;
+    line-height: 1.74;
+  }
+
+  .about_btn {
+    text-align: center;
+    margin: 60px 0 100px 0;
+  }
+  .contact_title h2 {
+    margin: -30px 0 30px 0;
+    font-size: 15px;
+  }
+
+  .contact_title_en {
+    font-size: 75px;
+  }
+
+  .contact_text p {
+    font-size: 15px;
+    line-height: 1.53;
+  }
+
+  /* 背景装飾 */
+
+  .haikei01 img {
+    top: 1139px;
+    left: -35px;
+    width: 55%;
+  }
+
+  .haikei02 img {
+    top: 138px;
+    right: -10px;
+    width: 30%;
+  }
+
+  .haikei03 img {
+    width: 55%;
+    top: 2046px;
+  }
+
+  .haikei04 img {
+    top: 4714px;
+    left: -50px;
+    width: 55%;
+  }
+
+  .haikei05 img {
+    top: 2440px;
+    right: 0;
+    width: 40%;
+  }
 }

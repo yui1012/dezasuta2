@@ -39,19 +39,21 @@
                 <img src="images/instagramlogo.png" alt="Instagramアイコン">
             </a>
         </div>
-        <div class="scroll">
-            <span>SCROLL</span>
-        </div>
+
     </header>
 
 
     <main>
         <div class="haikei01"><img src="images/haikei01.png" alt="3連石"></div>
+        <div class="haikei02"><img src="images/haikei02.png" alt="2連石-1"></div>
         <div class="haikei03"><img src="images/haikei03.png" alt="2連石-2"></div>
         <div class="haikei04"><img src="images/haikei04.png" alt="2連石-3"></div>
         <div class="haikei05"><img src="images/haikei05.png" alt="オレンジ1つ石"></div>
         <div class="main_visual">
-            <img src="images/main@2x-80.jpg" alt="メインの天然石画像">
+            <div class="scroll pc_only"><span>SCROLL</span></div>
+            <div class="pc_only"><img src="images/main@2x-80.jpg" alt="メインの天然石画像"></div>
+            <div class="sp_only"><img src="images/main_sp@2x.png" alt="縦長メインの天然石画像"></div>
+
             <div class="main_text">
                 <p>「想いを磨く」</p>
                 <p>変わらない想いを<br>輝き続けるカタチに</p>
@@ -59,7 +61,7 @@
         </div>
 
         <div class="concept">
-            <div class="haikei02"><img src="images/haikei02.png" alt="2連石-1"></div>
+
             <p>あなたの“想い”に寄り添い、<br>丁寧に磨き上げてひとつのカタチを創り上げる<br>
                 お客様自身の輝きを、<br>より一層輝かせるデザインを提供いたします
             </p>
@@ -104,6 +106,7 @@
             </ul>
         </section>
         <section class="works">
+
             <div class="works_title">
                 <div class="works_title_en">works</div>
                 <h2>制作実績</h2>
@@ -190,9 +193,10 @@
                 </div>
             </div>
 
-            <div class="about_haikei">
-                <img src="images/about_haikei.png" alt="背景の装飾">
+            <div class="about_haikei pc_only">
+                <img src="images/about_haikei.png" alt="pc用about背景装飾">
             </div>
+            <div class="about_haikei sp_only"><img src="images/sp_about_haikei@2x.png" alt="sp用about背景装飾"></div>
             <div class="about_btn">
                 <a href="about/index.html">
                     <img src="images/morebtn.png" alt="moreボタン">
@@ -221,7 +225,7 @@
 
     <footer>
         <div class="footer_wrap">
-            <nav class="footer_nav">
+            <nav class="footer_nav pc_only">
                 <ul>
                     <li>
                         <a href="index.html">home</a>
@@ -241,8 +245,8 @@
                 </ul>
             </nav>
 
-            <div class="footer_logo"><a href="index.html">
-                    <img src="images/logo2.png" alt="縦型ロゴ"></a>
+            <div class="footer_logo">
+                <div></div><a href="index.html"><img src="images/logo2.png" alt="縦型ロゴ"></a>
             </div>
 
         </div>

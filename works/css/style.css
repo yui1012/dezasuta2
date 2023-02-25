@@ -36,7 +36,7 @@
 
 .works_contents {
   display: flex;
-  margin: 0 30px;
+  margin: 0 10px;
 }
 .works_contents img {
   width: 45%;
@@ -46,9 +46,9 @@
 .textbox {
   border: solid 2px #c6ba60;
   border-radius: 8px;
-  width: 484px;
-  padding-top: 20px;
-  padding-left: 40px;
+  width: 49%;
+  padding-top: 30px;
+  padding-left: 13px;
 }
 
 .work_head {
@@ -68,6 +68,7 @@
 .comment p {
   padding-top: 20px;
   line-height: 1.62;
+  letter-spacing: 0.05rem;
   border-top: solid 2px #c6ba60;
 }
 
@@ -80,43 +81,6 @@
 
 .toppage_btn img {
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
-}
-footer {
-  background-color: #cfc9bf;
-  padding-top: 50px;
-}
-.footer_wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.footer_nav ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-  color: #4d4d4d;
-  align-items: center;
-}
-.footer_nav ul li {
-  padding: 0 20px;
-  border-right: 1px solid #4d4d4d;
-}
-.footer_nav ul li:last-child {
-  border-right: none;
-}
-.footer_logo {
-  padding: 0 30px;
-}
-.copylight {
-  max-width: 1000px;
-  font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro";
-  font-size: 9px;
-  color: #4d4d4d;
-  text-align: end;
-  margin: 0 auto;
-  padding: 0 100px 35px 0;
-  justify-content: space-around;
 }
 
 /* タブの構成 */
@@ -176,5 +140,69 @@ li {
   }
   to {
     opacity: 1;
+  }
+}
+sp_only {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+    margin: 0 auto;
+  }
+  .pc_only {
+    display: none;
+  }
+
+  .works_title h1 {
+    font-size: 14px;
+    margin-top: -23px;
+  }
+  .works_title_en {
+    font-size: 55px;
+    margin-top: -32px;
+  }
+  .works_contents {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .works_contents img {
+    width: 85%;
+    margin-right: 0;
+  }
+  .textbox {
+    width: 76%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .tabitem {
+    flex-basis: 30%;
+    background-color: #999999;
+    border-radius: 3px 3px 0 0;
+    margin: 0 5px;
+    font-size: 13px;
+  }
+  .tabitem.tabitem_current {
+    font-size: 13px;
+  }
+
+  .item_title {
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+
+  .work_head,
+  .data {
+    font-size: 15px;
+  }
+
+  .comment {
+    font-size: 15px;
+    text-align: start;
+    line-height: 1.6;
   }
 }
