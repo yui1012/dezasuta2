@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/lightbox.css">
 </head>
 
 <body>
@@ -44,11 +45,11 @@
 
 
     <main>
-        <div class="haikei01"><img src="images/haikei01.png" alt="3連石"></div>
-        <div class="haikei02"><img src="images/haikei02.png" alt="2連石-1"></div>
-        <div class="haikei03"><img src="images/haikei03.png" alt="2連石-2"></div>
-        <div class="haikei04"><img src="images/haikei04.png" alt="2連石-3"></div>
-        <div class="haikei05"><img src="images/haikei05.png" alt="オレンジ1つ石"></div>
+        <div class="thumbnail haikei01"><img src="images/haikei01.png" alt="3連石"></div>
+        <div class="thumbnail haikei02"><img src="images/haikei02.png" alt="2連石-1"></div>
+        <div class="thumbnail haikei03"><img src="images/haikei03.png" alt="2連石-2"></div>
+        <div class="thumbnail haikei04"><img src="images/haikei04.png" alt="2連石-3"></div>
+        <div class="thumbnail haikei05"><img src="images/haikei05.png" alt="オレンジ1つ石"></div>
         <div class="main_visual">
             <div class="scroll pc_only"><span>SCROLL</span></div>
             <div class="pc_only"><img src="images/main@2x-80.jpg" alt="メインの天然石画像"></div>
@@ -113,42 +114,42 @@
             </div>
             <div class="works_wrap">
                 <div class="works_box">
-                    <a href="">
+                    <a href="images/gakuwari.jpg" data-lightbox="携帯バナー">
                         <img src="images/works01@2x-80.jpg" alt="モック１">
                     </a>
                     <div class="works_title1">広告バナー</div>
                     <div class="works_title2">design</div>
                 </div>
                 <div class="works_box">
-                    <a href="">
+                    <a href="images/cafe@2x-80.jpg" data-lightbox="cafeサイト">
                         <img src="images/works02@2x-80.jpg" alt="モック２">
                     </a>
                     <div class="works_title1">WEBサイト</div>
                     <div class="works_title2">coding</div>
                 </div>
                 <div class="works_box">
-                    <a href="">
+                    <a href="images/saron.jpg" data-lightbox="美容室サイト">
                         <img src="images/works03@2x-80.jpg" alt="モック３">
                     </a>
                     <div class="works_title1">LPサイト</div>
                     <div class="works_title2">design</div>
                 </div>
                 <div class="works_box">
-                    <a href="">
+                    <a href="images/trip.jpg" data-lightbox="旅行バナー">
                         <img src="images/works04@2x-80.jpg" alt="モック４">
                     </a>
                     <div class="works_title1">広告バナー</div>
                     <div class="works_title2">design</div>
                 </div>
                 <div class="works_box">
-                    <a href="">
+                    <a href="images/workers.jpg" data-lightbox="ワーキングスペースサイト">
                         <img src="images/works05@2x-80.jpg" alt="モック５">
                     </a>
                     <div class="works_title1">WEBサイト</div>
                     <div class="works_title2">design</div>
                 </div>
                 <div class="works_box">
-                    <a href="">
+                    <a href="images/hamburger.jpg" data-lightbox="ハンバーガーバナー">
                         <img src="images/works06@2x-80.jpg" alt="モック６">
                     </a>
                     <div class="works_title1">広告バナー</div>
@@ -261,13 +262,17 @@
             });
         });
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <script>
         // ①thumbnailクラスのついた要素を定数「image」に格納
-        const image = document.getElementsByClassName('haikei01');
+        const image = document.getElementsByClassName('thumbnail');
         // ②simpleParallaxを宣言
-        new simpleParallax(image);
+        new simpleParallax(image, {
+            orientation: 'right'
+        });
+
     </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
