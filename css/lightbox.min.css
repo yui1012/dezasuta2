@@ -167,6 +167,6 @@ body.lb-disable-scrolling {
 }
 .lb-data .lb-close:hover {
   cursor: pointer;
-  filter: alpha(Opacity=100);
+  filter: alpha(Opacity=50);
   opacity: 1;
 }

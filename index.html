@@ -9,8 +9,9 @@
     <meta name="description" content="nakanoy yuiのポートフォリオサイトです。">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="dist/css/lightbox.css">
+
 </head>
 
 <body>
@@ -25,6 +26,7 @@
             <nav class="pc_nav" style="display: none;">
                 <ul>
                     <li><a href="index.html" class="nav_hover">home</a></li>
+                    <li><a href="concept/index.html" class="nav_hover">concept</a></li>
                     <li><a href="#service" class="nav_hover">service</a></li>
                     <li><a href="works/index.html" class="nav_hover">works</a></li>
                     <li><a href="about/index.html" class="nav_hover">about</a></li>
@@ -45,11 +47,11 @@
 
 
     <main>
-        <div class="thumbnail haikei01"><img src="images/haikei01.png" alt="3連石"></div>
-        <div class="thumbnail haikei02"><img src="images/haikei02.png" alt="2連石-1"></div>
-        <div class="thumbnail haikei03"><img src="images/haikei03.png" alt="2連石-2"></div>
-        <div class="thumbnail haikei04"><img src="images/haikei04.png" alt="2連石-3"></div>
-        <div class="thumbnail haikei05"><img src="images/haikei05.png" alt="オレンジ1つ石"></div>
+        <div class="haikei01"><img src="images/haikei01.png" alt="3連石"></div>
+        <div class="haikei02"><img src="images/haikei02.png" alt="2連石-1"></div>
+        <div class="haikei03"><img src="images/haikei03.png" alt="2連石-2"></div>
+        <div class="haikei04"><img src="images/haikei04.png" alt="2連石-3"></div>
+        <div class="haikei05"><img src="images/haikei05.png" alt="オレンジ1つ石"></div>
         <div class="main_visual">
             <div class="scroll pc_only"><span>SCROLL</span></div>
             <div class="pc_only"><img src="images/main@2x-80.jpg" alt="メインの天然石画像"></div>
@@ -62,7 +64,6 @@
         </div>
 
         <div class="concept">
-
             <p>あなたの“想い”に寄り添い、<br>丁寧に磨き上げてひとつのカタチを創り上げる<br>
                 お客様自身の輝きを、<br>より一層輝かせるデザインを提供いたします
             </p>
@@ -72,6 +73,7 @@
                 </a>
             </div>
         </div>
+
         <section class="service" id="service">
 
             <div class="service_title">
@@ -232,6 +234,9 @@
                         <a href="index.html">home</a>
                     </li>
                     <li>
+                        <a href="concept/index.html">concept</a>
+                    </li>
+                    <li>
                         <a href="#service">service</a>
                     </li>
                     <li>
@@ -263,15 +268,7 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
-    <script>
-        // ①thumbnailクラスのついた要素を定数「image」に格納
-        const image = document.getElementsByClassName('thumbnail');
-        // ②simpleParallaxを宣言
-        new simpleParallax(image, {
-            orientation: 'right'
-        });
 
-    </script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 

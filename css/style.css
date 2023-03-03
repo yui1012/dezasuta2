@@ -43,40 +43,116 @@
 
 /* 背景装飾 */
 
-.haikei01 img {
+.haikei01 {
   position: absolute;
-  top: 1100px;
+  top: 1380px;
   left: -40px;
+  animation: haikei01 9s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 100%;
+  margin-top: 15px;
 }
-
+@keyframes haikei01 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
 .haikei02 img {
   position: absolute;
   top: 1000px;
-  right: -43px;
+  right: 0px;
+  animation: haikei02 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 17%;
+  margin-top: 15px;
 }
-
+@keyframes haikei02 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
 .haikei03 img {
   position: absolute;
-  top: 1720px;
+  top: 1820px;
   right: 0;
+  animation: haikei03 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 20%;
+  margin-top: 15px;
 }
-
+@keyframes haikei03 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
 .haikei04 img {
   position: absolute;
   top: 2900px;
   left: -20px;
+  animation: haikei04 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 20%;
+  margin-top: 15px;
 }
-
+@keyframes haikei04 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
 .haikei05 img {
   position: absolute;
   top: 2721px;
   right: 77px;
+  animation: haikei05 8s infinite ease-in-out 0.8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 20%;
+  margin-top: 15px;
+}
+@keyframes haikei05 {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
 }
 
 /* メインビジュアル　スタート */
 .main {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .main_visual {
@@ -96,6 +172,20 @@
   position: absolute;
   top: 55%;
   left: 15%;
+  animation: main_text 7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+@keyframes main_text {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .main_text :nth-child(1) {
   font-size: 57px;
@@ -122,6 +212,11 @@
   margin-bottom: 169px;
 }
 
+.about_btn a {
+  width: 142px;
+  height: 42px;
+}
+
 .concept_btn img {
   box-shadow: 2px 3px 0 0 rgba(199, 178, 153, 0.8);
 }
@@ -131,13 +226,32 @@
   text-align: center;
   position: relative;
 }
+.service_title {
+  animation: service_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+@keyframes service_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .service_title_en {
   font-family: "Hiragino Mincho ProN";
   font-size: 169px;
   color: #e9e0d6;
 }
+
 .service_title h2 {
   margin-top: -50px;
+  z-index: 1;
 }
 .service_wrap {
   display: flex;
@@ -169,6 +283,23 @@ h3 {
   text-align: center;
 }
 
+.works_title {
+  animation: works_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes works_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .works_title_en {
   font-family: "Hiragino Mincho ProN";
   font-size: 169px;
@@ -207,6 +338,24 @@ h3 {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.about_title {
+  animation: about_title 8s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes about_title {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .about_title_en {
   text-align: center;
@@ -501,12 +650,12 @@ h3 {
   .haikei02 img {
     top: 550px;
     right: 0px;
-    width: 30%;
+    width: 40%;
   }
 
   .haikei03 img {
     width: 55%;
-    top: 2046px;
+    top: 1700px;
   }
 
   .haikei04 img {
@@ -516,8 +665,8 @@ h3 {
   }
 
   .haikei05 img {
-    top: 2440px;
-    right: 0;
+    top: 2240px;
+    left: 0;
     width: 40%;
   }
 }
